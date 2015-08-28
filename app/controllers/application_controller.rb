@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
   
   def my_map()
     a = [1, 2, 3, 4, 5]
-    return a.map {|i| i+1}
+    render a.map {|i| i+1}
   end
 end
