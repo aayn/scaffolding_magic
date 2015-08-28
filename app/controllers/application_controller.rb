@@ -3,8 +3,4 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   
-  def my_map()
-    a = [1, 2, 3, 4, 5]
-    render text: "#{a.map {|i| i+1}}"
-  end
 end
